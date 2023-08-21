@@ -29,16 +29,17 @@ xplus := xpos + squareHalf
 ymins := ypos - squareHalf
 yplus := ypos + squareHalf
 
-Random, randX, xmins, xplus
-Random, randY, ymins, yplus
-
-
-		; MsgBox, xpos=%xpos%, ypos=%ypos%
-		; MsgBox, randX=%randX%, randY=%randY%
-
 
 i := 1
 while(i < 50){
+
+
+		Random, randX, xmins, xplus
+		Random, randY, ymins, yplus
+
+
+				; MsgBox, xpos=%xpos%, ypos=%ypos%
+				; MsgBox, randX=%randX%, randY=%randY%
 
 
 		Click %randX% %randY%
